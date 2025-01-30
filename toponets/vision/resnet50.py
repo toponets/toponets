@@ -1,7 +1,4 @@
 import torch
-from torch.amp import GradScaler
-import torchvision.models as models
-import numpy as np
 import os
 
 from .resnet18 import BlurPoolConv2d, create_model_and_scaler
@@ -24,7 +21,7 @@ def get_url_from_tau(tau):
 def resnet50(tau=30.0, checkpoint_path = None):
 
     if checkpoint_path is None: 
-        checkpoint_path = f"resnet18_tau_{tau}.pt"
+        checkpoint_path = f"resnet50_tau_{tau}.pt"
 
     model, scaler = create_model_and_scaler(
         arch="resnet50",
@@ -42,4 +39,5 @@ def resnet50(tau=30.0, checkpoint_path = None):
 
     state_dict = torch.load(checkpoint_path, weights_only=True)
     model.load_state_dict(state_dict)
+    model.eval()
     return model

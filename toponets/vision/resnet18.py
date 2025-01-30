@@ -81,4 +81,5 @@ def resnet18(tau=0.5, checkpoint_path = None):
 
     state_dict = torch.load(checkpoint_path, weights_only=True)
     model.load_state_dict(state_dict)
+    model.eval()
     return model
