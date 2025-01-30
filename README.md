@@ -1,6 +1,6 @@
 # toponets
 
-A simple interface to load checkpoints from the [TopoNets Paper](https://toponets.github.io) (ICLR 2025). We closely followed the standard training procedures for these models. The only difference being the addition of [topoloss](https://github.com/toponets/topoloss) to the original training loss.
+A simple interface to load checkpoints from the [TopoNets Paper](https://toponets.github.io) (ICLR 2025). We closely followed the standard training procedures for these models. The only difference being the addition of [topoloss](https://github.com/toponets/topoloss) to the original loss.
 
 All of the checkpoints are hosted on the [MurtyLab HuggingFace](https://huggingface.co/murtylab) 🤗 
 
