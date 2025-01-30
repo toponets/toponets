@@ -14,12 +14,13 @@ Then load the pre-trained checkpoints like this:
 ```python
 import toponets
 
-tau = 10.0  # Choose a supported tau value for the selected model
+tau =  # Choose a supported tau value for the selected model
 
-topo_resnet18 = toponets.resnet18(tau=tau, checkpoint_path=f"resnet18_tau_{tau}.pt")  # Supported taus: [0.5, 1.0, 5.0, 10.0, 20.0, 50.0]
-topo_resnet50 = toponets.resnet50(tau=tau, checkpoint_path=f"resnet50_tau_{tau}.pt")  # Supported taus: [30.0]
-topo_vit_b_32 = toponets.vit_b_32(tau=tau, checkpoint_path=f"vit_b_32_tau_{tau}.pt")  # Supported taus: [10.0]
-topo_nanogpt = toponets.nanogpt(tau=tau, checkpoint_path=f"nanogpt_tau_{tau}.pt")  # Supported taus: [0.5, 1.0, 3.0, 50.0]
+topo_resnet18 = toponets.resnet18(tau=tau, checkpoint_path=f"resnet18_tau_{tau}.pt")  # Supported taus: [0.5, 1.0, 5.0, 10.0, 20.0, 50.0] best_performance tau = 10.0
+topo_resnet50 = toponets.resnet50(tau=tau, checkpoint_path=f"resnet50_tau_{tau}.pt")  # Supported taus: [30.0] 
+topo_vit_b_32 = toponets.vit_b_32(tau=tau, checkpoint_path=f"vit_b_32_tau_{tau}.pt")  # Supported taus: [10.0] 
+topo_nanogpt = toponets.nanogpt(tau=tau, checkpoint_path=f"nanogpt_tau_{tau}.pt")  # Supported taus: [0.5, 1.0, 3.0, 50.0] best_performance tau = 50.0
 ```
+
 
 Check out [example.py](https://github.com/toponets/toponets/blob/main/example.py) for more examples.
