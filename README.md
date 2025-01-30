@@ -20,3 +20,4 @@ topo_vit_b_32 = toponets.vit_b_32(tau=10.0, checkpoint_path = f"vit_b_32_tau_{ta
 topo_nanogpt = toponets.nanogpt(tau=50.0, checkpoint_path = f"nanogpt_tau_{tau}.pt")
 ```
 
+Check out [example.py](https://github.com/toponets/toponets/blob/main/example.py) for more examples.
